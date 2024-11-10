@@ -279,7 +279,7 @@ ul {
 }
 
 /* Responsive Styling */
-@media (max-width: 512px) {
+@media (max-width: 650px) {
   body {
       display: flex;
       flex-direction: column;
