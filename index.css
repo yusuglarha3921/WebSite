@@ -240,12 +240,14 @@ ul {
   }
   
   .card {
-    width: 60%;
-    max-width: 600px;
-    margin: 0 auto;
+    width: 500px;
+    height: 300 px;
+    background: rgb(0, 0, 0);
+    border-radius: 10px;
+    transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     transform: translateY(-550px);
-    margin-left: 700px;
-  }
+    margin-left: 800px;
+   }
   .example-2 {
    transform: translateY(150px);  
    margin-left: 500px;
@@ -304,7 +306,8 @@ ul {
 
   .card {
       width: 70%; /* Küçük ekranlar için daha uygun genişlik */
-      margin-left: 30px;
+      height: 400px;
+      margin-left: 50px;
       transform: translateY(-600px);
   }
 
@@ -400,6 +403,58 @@ ul {
   .example-2{
     margin-left: -20%;
     transform: translateY(0px);
+  }
+  
+  .navbar {
+    padding: 20px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Navbar üstte kalması için */  
+  }
+  .navid {
+    font-size: 22px; /* Font boyutu artırıldı */
+    font-weight: 500;
+    color: rgb(157, 157, 157);
+    margin: 0;
+    transition: box-shadow 0.3s ease;
+  }
+  .isim {
+     /* Font boyutu artırıldı */
+     right: 60px;
+    font-size: 32px; /* Font boyutu artırıldı */
+    font-weight: 400;
+      color: rgb(255, 255, 255);
+    transition: transform 0.4s ease, color 0.3s ease;
+    padding: 1000px;
+  }
+  .ismim a {
+    text-decoration: none; /* Removes underline */
+    color: rgb(255, 255, 255);
+    right: 60px;
+    font-size: 32px; /* Font boyutu artırıldı */
+    font-weight: 400;
+  }
+  .ismim a:hover {
+    text-decoration: underline; /* Adds underline on hover */
+  }
+  /* Positioning the İletişim link to the top-right corner */
+  .İletisim {
+    position: absolute;
+    top: 20px;
+    right: 60px;
+    font-size: 32px; /* Font boyutu artırıldı */
+    font-weight: 400;
+    transition: transform 0.4s ease, color 0.3s ease;
+    transform: translateY(15px);
+  }
+  .İletisim a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+  .İletisim a:hover {
+    text-decoration: underline;
   }
   
   
