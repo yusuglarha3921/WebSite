@@ -331,7 +331,7 @@ ul {
   }
 
   .card {
-    width: 70%; /* Küçük ekranlar için daha uygun genişlik */
+    width: 75%; /* Küçük ekranlar için daha uygun genişlik */
     height: 650px;
     margin-left: 40px;
     transform: translateY(-550px);
