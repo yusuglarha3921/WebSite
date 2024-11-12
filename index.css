@@ -373,7 +373,7 @@ ul {
     left: 60%;
     transform: translate(-60%, -40%);
     color: rgb(255, 255, 255);
-    padding: 30px;
+    padding: 10px;
     width: 80%;
     max-width: 400px;
     text-align: center;
@@ -403,11 +403,11 @@ ul {
     text-align: center;
   }
   .yazili-metin #tanıtım{
-    font-size: 24px;
+    font-size: 20px;
     margin-top: 150px;
     margin-bottom: 20px;
     text-align: center;
-    padding: 15px; 
+    padding: 5px; 
     font-family: 'Times New Roman', Times, serif;}        
 
 
