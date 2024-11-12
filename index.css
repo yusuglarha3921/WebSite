@@ -34,8 +34,9 @@ a {
   overflow: hidden;
   border: 3px solid rgb(138, 138, 138);
   box-shadow: 0 4px 15px rgba(82, 82, 82, 0.5);
-  transition: transform 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
-  touch-action: none; /* Dokunmatik ekranlarda aşağıya kaymaması için */
+  transition: none; /* Animasyonları kapat */
+  pointer-events: none; /* Tıklanmayı devre dışı bırakır */
+  touch-action: none; /* Dokunmatik ekranlarda kaymayı engeller */
 }
 
 .gif img {
@@ -43,6 +44,7 @@ a {
   height: 100%;
   object-fit: cover;
 }
+
 
 
  
@@ -121,16 +123,19 @@ ul {
   background-position: center;
   background-repeat: no-repeat;
 }
+
+
 .example-2 {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: -600px;
-  transform: translate(-80%, 100px);
+  transform: translate(-100%, 100px);
 }
 
 .example-2 .icon-content {
   margin: 0 15px; /* Margin artırıldı */
+  transform: translateX(-250px);
 }
 
 .example-2 .icon-content .tooltip {
