@@ -35,6 +35,7 @@ a {
   border: 3px solid rgb(138, 138, 138);
   box-shadow: 0 4px 15px rgba(82, 82, 82, 0.5);
   transition: transform 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
+  touch-action: none; /* Dokunmatik ekranlarda aşağıya kaymaması için */
 }
 
 .gif img {
@@ -367,10 +368,10 @@ ul {
     position: absolute;
     top: 50%;
     left: 60%;
-    transform: translate(-60%, -40%);
+    transform: translate(-60%, 50%);
     color: rgb(255, 255, 255);
     padding: 10px;
-    width: 80%;
+    width: 100%;
     max-width: 400px;
     text-align: center;
     border-radius: 10px;
@@ -585,11 +586,7 @@ ul {
     overflow-x: hidden; /* Sağ kaymayı önle */
   }
 
-  .profil-resmi img {
-    width: 150px; /* Daha küçük ekranlar için genişlik azaltıldı */
-    margin-left: 0;
-    transform: translateY(50px);
-  }
+
 
   .container {
     width: 100%; /* Ekran genişliğine göre uygun hale getirildi */
@@ -602,7 +599,7 @@ ul {
     position: absolute;
     top: 70%;
     left: 60%;
-    transform: translate(-60%, -40%);
+    transform: translate(-60%, -50%);
     color: rgb(255, 255, 255);
     padding: 10px;
     width: 80%;
