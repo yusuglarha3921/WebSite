@@ -302,11 +302,13 @@ ul {
   }
 
   .gif {
-    position: fixed;
-    top: 220px;
-    right: calc(600px + 12cm);
-    width: 280px;
-    height: 280px;
+  position: absolute;    
+   top: 20px;
+    right: calc(px + 5cm);
+  left: calc(145px + 5cm);
+  transform: translateY(340px);
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     overflow: hidden;
     border: 3px solid rgb(138, 138, 138);
@@ -319,7 +321,6 @@ ul {
 .gif img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
 }
 
 
