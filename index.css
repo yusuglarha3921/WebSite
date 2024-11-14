@@ -360,7 +360,10 @@ ul {
     overflow-x: hidden; /* Sağ kaymayı önle */
   }
 
- 
+  .example-2 {
+    margin-left: 0%;
+    transform: translateY(0px);
+  }
 
   .container {
     width: 100%; /* Ekran genişliğine göre uygun hale getirildi */
