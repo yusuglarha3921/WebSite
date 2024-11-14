@@ -543,12 +543,12 @@ ul {
   /* Positioning the İletişim link to the top-right corner */
   .İletisim {
     position: absolute;
-    top: 20px;
+    top: 30px;
     right: 60px;
-    font-size: 32px; /* Font boyutu artırıldı */
+    font-size: 30px; /* Font boyutu artırıldı */
     font-weight: 400;
     transition: transform 0.4s ease, color 0.3s ease;
-    transform: translateY(15px);
+    transform: translateX(-35px);
   }
   .İletisim a {
     color: rgb(255, 255, 255);
