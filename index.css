@@ -305,7 +305,7 @@ ul {
   position: absolute;    
    top: 20px;
     right: calc(px + 5cm);
-  left: calc(-80px + 5cm);
+  left: calc(-250px + 5cm);
   transform: translateY(250px);
     width: 200px;
     height: 200px;
