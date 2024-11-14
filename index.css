@@ -285,6 +285,27 @@ ul {
 }
 
 
+.gif {
+  position: absolute;    
+  right: calc(px + 5cm);
+  left: calc(-90px + 5cm);
+  transform: translate(40%, 55%);
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 3px solid rgb(138, 138, 138);
+    box-shadow: 0 4px 15px rgba(82, 82, 82, 0.5);
+    transition: transform 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+.gif img {
+    width: 100%;
+    height: 100%;
+}
+
+
 
 
 
