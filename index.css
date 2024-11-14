@@ -559,7 +559,7 @@ ul {
     font-weight: 400;
     color: rgb(255, 255, 255);
     transition: transform 0.4s ease, color 0.3s ease;
-    padding: 1000px;
+    padding: 100px;
   }
   .ismim a {
     text-decoration: none; /* Removes underline */
