@@ -597,6 +597,8 @@ ul {
     top: 15vh;
     right: 25vw;
     position: absolute;
+    transform: translate(10%, 10%);
+
 }
 
 
