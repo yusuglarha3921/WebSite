@@ -90,6 +90,7 @@ section .content{
     display: flex;
     flex-direction: column;
     margin: 0 10%;
+    transform: translateY(30px);
 }
 
 .main-content h1{
@@ -139,7 +140,7 @@ ul {
     justify-content: center;
     align-items: center;
     margin-top: -600px;
-    transform: translate(-10%, 420px);
+    transform: translate(-10%, 460px);
   }
   
   .example-2 .icon-content {
