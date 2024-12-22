@@ -1,95 +1,109 @@
-* {
-  padding: 0;
-  margin: 0;
-  font-family: 'Times New Roman', Times, serif;
-  box-sizing: border-box;
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
-body {
-  background-color: rgb(140, 117, 90);
-  width: 100%;
-  height: auto;
-  overflow: hidden;
-  position: relative;
+body{
+    background-color:rgb(140, 117, 90);
+    width: 100%;
+    height: auto;
+    overflow:hidden;
+    position: relative;
 }
 
-nav {
-  z-index: 4;
-  position: sticky;
-  top: 0;
-  width: 100%;
-  height: 15vh;
-  backdrop-filter: brightness(100%);
+nav{
+    z-index: 4;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 10vh;
+    backdrop-filter: brightness(100%);
 }
 
-.nav-container {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  align-items: center;
-  height: 70%;
-  padding: 0 20px;
+.nav-container{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    height: 100%;
+    padding: 0 20px;
 }
 
-.nav-container .logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 10px;
-  gap: 20px;
+.nav-container .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    gap: 20px;
 }
 
-.nav-container .logo img {
-  width: 80px;
-  height: auto;
-  border-radius: 50%;
-  border: 3px solid rgb(54, 54, 54);
-  box-shadow: 0 4px 15px rgba(82, 82, 82, 0.5);
-  transition: width 0.3s ease;
+.nav-container .logo img{
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid rgb(54, 54, 54);
+    box-shadow: 0 4px 15px rgba(82, 82, 82, 0.5);
+    transition: width 0.3s ease;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr auto 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+section .content{
+    grid-row: 2;
+    text-align: center;
+}
+
+section .content h1{
+    font-size: 3.7rem;
+    color: #e4e4e4;
+    margin-bottom: 20px;
+}
+
+section .content p{
+    font-size: 1.6rem;
+    color: #e4e4e4;
+    max-width: 800px;
+    line-height: 1.6;
+    margin: 0 auto;
+}
+
+
+.loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(37, 46, 63);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
 }
 
 .contact-link {
-  display: flex;
-  justify-content: flex-end;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .contact-link a {
-  text-decoration: none;
-  color: rgb(22, 22, 22);
-  font-size: 1.2rem;
-  margin-right: 20px;
-  transition: color 0.3s;
+    text-decoration: none;
+    color: rgb(22, 22, 22);
+    font-size: 1.2rem;
+    margin-right: 20px;
+    transition: color 0.3s;
 }
 
 .contact-link a:hover {
-  color: rgb(255, 255, 255);
-}
-
-section {
-  width: 100%;
-  height: 100vh;
-  display: grid;
-  grid-template-rows: 1fr auto 1fr;
-  align-items: center;
-  justify-items: center;
-}
-
-section .content {
-  grid-row: 2;
-  text-align: center;
-}
-
-section .content h1 {
-  font-size: 3.7rem;
-  color: #e4e4e4;
-  margin-bottom: 20px;
-}
-
-section .content p {
-  font-size: 1.6rem;
-  color: #e4e4e4;
-  max-width: 800px;
-  line-height: 1.6;
-  margin: 0 auto;
+    color: rgb(255, 255, 255);
 }
 
 ul {
@@ -201,155 +215,25 @@ ul {
 }
 
 .profile-photo {
-  width: 150px;
+  width: 150px; /* Fotoğrafın boyutunu ayarlayabilirsin */
   height: 150px;
-  border-radius: 50%;
+  border-radius: 50%; /* Yuvarlak yapmak için */
   border: 5px solid rgba(255, 255, 255, 0.8);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-  object-fit: cover;
+  object-fit: cover; /* Fotoğrafın yuvarlak içinde düzgün görünmesi için */
   margin-top: 100px;
-}
-
-#articles {
-  background-color: rgba(255, 255, 255, 0.9);
-  padding: 50px 20px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 60vh;
-}
-
-#articles .content h1 {
-  font-size: 2.5rem;
-  color: #333;
-  margin-bottom: 40px;
-}
-#articles .content {
-  margin-top: auto; /* Yukarıya boşluk bırakır */
-  margin-bottom: auto; /* Aşağıya boşluk bırakır */
-}
-
-
-
-.articles-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px; /* Geliştirildi */
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.article {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  max-height: 400px; /* Yükseklik sınırlandırıldı */
-  overflow: hidden;
-}
-
-.article h2 {
-  font-size: 1.5rem;
-  color: #444;
-  margin-bottom: 10px;
-}
-
-.article p {
-  font-size: 1rem;
-  color: #666;
-  line-height: 1.6;
-}
-
-.article .read-more {
-  display: inline-block;
-  margin-top: 10px;
-  color: #ff4500;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1rem;
-  padding: 12px 24px; /* Mobil uyumlu hale getirildi */
-}
-
-.article .read-more:hover {
-  text-decoration: underline;
-}
-
-#article-detail {
-
-  padding: 10px 10px;
-  text-align: center;
-  background-color: rgb(140, 117, 90);
-}
-
-#article-detail .content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: calc(100vh - 10vh); /* Navigasyon çubuğunu dikkate al */
-}
-
-.article-box {
-  background-color: #0e0b0b;
-  border: 1px solid rgb(140, 117, 90);
-  border-radius: 10px;
-  padding: 30px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  max-width: 800px;
-  max-height: 800px;
-  text-align: left;
-}
-
-.article-box h1 {
-  font-size: 2rem;
-  color: #333;
-  margin-bottom: 20px;
-}
-
-.article-box p {
-  font-size: 1rem;
-  color: #444;
-  line-height: 1.6;
-  margin-bottom: 20px;
-}
-
-.download-link {
-  display: inline-block;
-  margin-top: 20px;
-  color: #fff;
-  background-color: #ff4500;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 10px 20px;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-}
-
-.download-link:hover {
-  background-color: #842303;
 }
 
 @media (max-width: 1024px) {
    
 
-  .nav-container {
-    grid-template-columns: auto;
-    justify-items: center;
-}
+    section .content h1 {
+        font-size: 3rem;
+    }
 
-.contact-link {
-    margin: 5px 0;
-}
-
-section .content h1 {
-    font-size: 3rem;
-}
-
-section .content p {
-    font-size: 1.5rem;
-}
+    section .content p {
+        font-size: 1.5rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -366,16 +250,4 @@ section .content p {
       width: 120px; /* Küçük ekranlar için boyut ayarı */
       height: 120px;
   }
-  #articles .content h1 {
-    font-size: 2rem;
-  }
-  
-  .article h2 {
-    font-size: 1.3rem;
-  }
-  
-  .read-more {
-    font-size: 0.9rem;
-    padding: 10px 20px;
-}
 }
