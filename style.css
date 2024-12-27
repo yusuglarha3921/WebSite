@@ -36,6 +36,7 @@ nav {
   align-items: center;
   padding-top: 10px;
   gap: 20px;
+  position: absolute;
 }
 
 .nav-container .logo img {
@@ -198,6 +199,7 @@ ul {
   align-items: center;
   grid-row: 1;
   margin-bottom: 20px;
+
 }
 
 .profile-photo {
