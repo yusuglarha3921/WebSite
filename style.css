@@ -224,14 +224,15 @@ ul {
 
 .article {
   background: #cfcfcf;
-  padding: 6px;
+  padding: 10px;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
+  font-size: 0.3rem;
 }
 
 .article h2 {
-  font-size: 1rem;
+  font-size: 1.5rem;
   margin-bottom: 10px;
 }
 
@@ -243,7 +244,7 @@ ul {
 .download-link {
   display: inline-block;
   font-size: 1rem;
-  padding: 10px 20px;
+  padding: 5px 1px;
   background-color: #ff4500;
   color: #fff;
   text-decoration: none;
@@ -293,11 +294,12 @@ section .content p {
   }
  
   .articles-grid {
-    padding: 40px 20px; /* Yukarıdan boşluk artırıldı */
+    padding: 20px 10px; /* Yukarıdan boşluk artırıldı */
   }
 
   .article {
-    margin-top: 20px; /* Beyaz kutuyu aşağıya taşımak için margin eklendi */
+    padding: 1px 2px;
+    margin-top: 50px; /* Beyaz kutuyu aşağıya taşımak için margin eklendi */
   }
 
 
