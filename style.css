@@ -255,7 +255,7 @@ ul {
 .card4 {
   width: 100%; /* Grid sistemine uyum sağlaması için genişliği esnek yap */
   max-width: 170px; /* Maksimum genişlik belirle */
-  height: 23px;
+  height: 20px;
   background: rgb(236, 236, 236);
   border-radius: 8px 8px;
   margin-top: 25px;
@@ -263,7 +263,7 @@ ul {
 }
 
 .card4 h2{
-font-size: 12px;
+font-size: 11px;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
