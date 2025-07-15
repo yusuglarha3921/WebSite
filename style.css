@@ -11,6 +11,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 
   width: 100%;
   min-height: 100vh;
@@ -274,6 +275,10 @@ color: white;
 margin-left: 60px;
 }
 
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
 
 
 @media (max-width: 1024px) {
