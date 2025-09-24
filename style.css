@@ -10,7 +10,7 @@
 html { scroll-behavior: smooth; }
 
 body {
-  background-image: url("backgrounds.jpg");
+background-color: #202020;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
